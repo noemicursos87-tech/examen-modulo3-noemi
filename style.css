@@ -1,0 +1,30 @@
+:root {
+    --primary: #4a90e2;
+    --success: #2ecc71;
+    --error: #e74c3c;
+    --bg: #f4f7f6;
+    --text: #2c3e50;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+body {
+    background-color: #b237b2; /* Este es el código del lila claro */
+}
+.quiz-container { background: white; width: 90%; max-width: 600px; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; }
+
+/* Barra de progreso */
+.progress-container { background: #eee; height: 12px; border-radius: 10px; margin: 20px 0; overflow: hidden; }
+.progress-bar { background: var(--primary); height: 100%; width: 0%; transition: width 0.4s ease; }
+
+/* Opciones */
+.options-grid { display: grid; gap: 10px; margin-top: 20px; }
+.option-btn { padding: 15px; border: 2px solid #ddd; border-radius: 8px; background: white; cursor: pointer; font-size: 16px; transition: 0.3s; }
+.option-btn:hover { border-color: var(--primary); background: #f0f7ff; }
+
+/* Feedback */
+.correct { background-color: var(--success) !important; color: white; border-color: var(--success); }
+.incorrect { background-color: var(--error) !important; color: white; border-color: var(--error); }
+.disabled { pointer-events: none; opacity: 0.7; }
+
+.hidden { display: none; }
+#restart-btn { margin-top: 20px; padding: 12px 25px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer; }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+        body {
+            background-color: #cb72e4;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <img src="portada.avif" alt="portada">
+        <header>
+            <h1>Quiz de Cultura General</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="question-counter">Pregunta 1 de 10</p>
+        </header>
+
+        <div id="quiz-screen">
+            <h2 id="question-text">Cargando pregunta...</h2>
+            <div id="options-container" class="options-grid">
+                </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2>¡Test Finalizado!</h2>
+            <div class="score-circle">
+                <span id="final-score">0</span>/10
+            </div>
+            <p id="percentage">0% de aciertos</p>
+            <p id="result-message"></p>
+            <button id="restart-btn">Reiniciar Test</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
